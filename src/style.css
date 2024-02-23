@@ -1,25 +1,41 @@
 body {
-    max-width: 1920px;
+    max-width: 2560px;
     margin: auto;
     font-style: normal;
     background-color: #5187f5;
     font-family: "Montserrat", sans-serif;
     font-optical-sizing: auto;
-
+    background-image: url('images/ciel-etoile.png');
+    background-size: cover; 
+    background-position: center; 
+    background-repeat: no-repeat;
 }
+
+h1 {
+    font-size: 48px;
+  }
+  
+  h2 {
+    font-size: 32px; 
+  }
+  
+  h3 {
+    font-size: 28px; 
+  }
+  
+  h4 {
+    font-size: 24px; 
+  }
 
 /**************header*************/
 .top-header {
-    top: 0;
-    z-index: 1000;
+    width: 100%;
     display: flex;
-    justify-content: space-between;
+    justify-content: flex-end;
     align-items: center;
-    padding: 30px 100px;  
-}
-
-.top-header .name {
-    font-size: 26px;
+    padding: 20px;
+    background-color: #f8f5e0;
+    font-size: 60px;
 }
 
 .nav ul {
@@ -35,29 +51,31 @@ body {
 
 .nav a {
     text-decoration: none;
-    color: #000;
+    color: #000000;
 }
 
 /************animation*********/
-.animation_name {
-    overflow: hidden;
-    display: flex;
-    justify-content: center;
-    font-size: 50px;
+.animation {
     padding: 50px;
 }
 
-#animatedText {
+.animation_name {
     font-size: 2em;
     white-space: nowrap;
     overflow: hidden;
-    transform: translateX(-100%);
-    animation: appear 2s forwards;
+    border-right: 0.15em solid #fff;
+    width: 100%; 
+    text-align: center; 
+    animation: typing 5s steps(20) forwards; 
+    color:#f8f5e0;
 }
 
-@keyframes appear {
+@keyframes typing {
+    from {
+        width: 0;
+    }
     to {
-        transform: translateX(0);
+        width: 100%;
     }
 }
 
@@ -69,18 +87,22 @@ body {
     align-items: center;
 	background-color: #f26767;
 	position: relative;
-    padding: 100px;
+    padding: 50px;
     margin-left: 100px;
     border-radius: 25px;
 }
 
 .picture {
-	margin: 0 20px;
-	z-index: 0;
+    width: 30%;
+    border-radius: 50%;
 }
 
+.portrait{
+border-radius: 50px;
+} 
+
 .picture img {
-	width: 100%;
+	width: 50%;
 }
 
 #about-me {
@@ -93,8 +115,6 @@ body {
     color: white;
 }
 .about-me__introduction {
-	font-family: 'Spectral';
-	font-weight: 800;
 	font-style: italic;
     font-size: 18px;
 	width: 100%;
@@ -106,7 +126,29 @@ body {
     color: white;
 }
 
+.curriculum {
+    width: 30%;
+    display: block; 
+    margin: 20px auto; 
+    background-color: #f26767; 
+    color: white;
+    padding: 10px 20px; 
+    text-decoration: none; 
+}
+.curriculum {
+    display:flex; 
+    justify-content: center;
+    color: #f26767;
+    margin: 50px; 
+    background-color: white;
+    font-size: 36px;
+    padding: 20px;
+}
+
 /**************gallery***************/
+#gallery{
+    padding: 100px 0;
+}
 .container {
     max-width: 90%;
     margin: 20px auto;
@@ -121,7 +163,7 @@ body {
     display: flex;
     justify-content: center;
     margin: 20px 0;
-    color: black;
+    color: #f8f5e0;;
 }
 
 .gallery-item {
@@ -137,9 +179,11 @@ body {
     opacity: 0.8;
 }
 /***********modale**********/
-modal {
+#modal {
     display: none;
-    display: flex;
+}
+
+.modal {display: flex;
     justify-content: center;
     align-items: center;
     position: fixed;
@@ -162,13 +206,14 @@ modal {
 }
 
 .modal-content {
-    position: relative;
+    
     max-width: 80%;
     max-height: 80%;
     border-radius: 30px; 
 }
 
 .modal-image {
+    width: 100%;
     border-radius: 30px;
 }
 
@@ -240,7 +285,7 @@ modal {
 .title {
     display: flex;
     justify-content: center;
-    color: white;
+    color: #f8f5e0;;
     padding: 1em;
 }
 
@@ -249,24 +294,23 @@ modal {
     flex-direction: column;
     justify-content: space-between;
     align-items: center;
-    background-color: #5187f5;
+    background-color: #f8f5e0;
     width: 30%;
     height: auto;
     padding: 1em;
     margin:0 2em;
     border-radius: 30px;
-    border-color: 2px solid  #000 ;
     display: flex;
- 
 }
 
 .service__logo {
-    border-bottom: 2px solid black;
     display: flex;
     justify-content: space-around;
     align-items: center;
     height: 50px;
     color: white;
+    padding: 80px;
+    background-color: #f8f5e0;
 }
 
 .outil {
@@ -310,6 +354,11 @@ modal {
 /***********formulaire**********/
 .form-container {
     width: 60%;
+    display: flex; 
+    justify-content: center;
+    background-color: #f8f5e0;
+    border-radius: 30px;
+    padding: 50px;
 }
 
 form {
@@ -328,7 +377,7 @@ form textarea {
 }
 
 form input[type="submit"] {
-    background-color: #f26767;
+    background-color: #f8f5e0;
     padding: .5em 1em;
 }
 

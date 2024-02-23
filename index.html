@@ -4,16 +4,15 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<meta name="description" content="Portfolio de Fanny Gimenez">
     <title>Fanny Gimenez</title>
-    <link rel="stylesheet" href="./assets/bootstrap/bootstrap.min.css">
-    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="./bootstrap/bootstrap.min.css">
+    <link rel="stylesheet" href="./src/style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Montserrat+Alternates:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
 	<meta charset="UTF-8">
-	<meta name="google-site-verification" content="S5WHpYcfzelSxzQ24iS0HVMpxffT5tnjNBWXQby7QKA" />
     <script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
-	<script src="./project.js"></script>
+	<script src="./src/project.js"></script>
 
 </head>
 <body>
@@ -37,29 +36,29 @@
 <main>
 	<section id="about">
 		<div class="picture left">
-			<img src="" width="560" height="558" style="max-width: 100%; height: auto;" alt="portrait">
+			<img class="portrait" src="src/images/moi4.jpg" alt="portrait">
 		</div>
 		<div id="about-me">
 			<h2 class="about-me__title">Je m'appelle Fanny Gimenez</h2>
-			<p class="about-me__introduction">Passionnée par la photographie et la vidéo, 
-				j’ai découvert le monde du développement web et celui-ci a attisé mon curiosité. 
+			<p class="about-me__introduction">
+				J’ai découvert le monde du développement web et celui-ci a attisé mon curiosité. 
 				Au terme d’une formation très enrichissante je souhaite mettre mes nouvelles compétences à profit et proposer mes services en tant que développeur web.
-				Au cours de ma carrière professionnelle, j'ai eu la chance de collaborer avec des esprits brillants et créatifs. 
 				Mon rôle actuel en tant que dévellopeur web me permet de relever des nouveaux défis stimulants et de contribuer à des projets passionnants. 
 				L'optimisme et la persévérance sont les piliers de ma personnalité, et je cherche constamment répondre au mien au besoin de mes collaborateurs.
 				Je suis toujours ouverte à de nouvelles connexions et à l'opportunité de découvrir ce que le monde a à offrir.</p>
-		</div>
+				<a href="src/images/CV_2024.jpg" class="curriculum" target="_blank">Curriculum Vitae</a>
+			</div>
 	</section>
 	<section id="gallery">
-		<h2 class="title__gallery">Mes réalisations</h2>
+		<h1 class="title__gallery">Mes réalisations</h1>
 		<div class="container">
 			<div class="gallery" >
-				<img class="gallery-item" onclick="OpenModal()" src="./assets/images/projets/booki.png" alt="booki" data-id="1">
-				<img class="gallery-item" onclick="OpenModal()" src="./assets/images/projets/ohmyfood.png" alt="OhmyFood!" data-id="2">
-				<img class="gallery-item" onclick="OpenModal()" src="./assets/images/projets/Sophie-bluel.webp" alt="Sophie Bluel" data-id="3">
-				<img class="gallery-item" onclick="OpenModal()" src="./assets/images/projets/kasa.png" alt="Kasa" data-id="4">
-				<img class="gallery-item" onclick="OpenModal()" src="./assets/images/projets/nina_carducci.png" alt="Nina Carducci" data-id="5">
-				<img class="gallery-item" onclick="OpenModal()" src="./assets/images/projets/argentbank1.png" alt="Argentbank" data-id="6">
+				<img class="gallery-item" onclick="OpenModal()" src="./src/images/projets/booki.png" alt="booki" data-id="1">
+				<img class="gallery-item" onclick="OpenModal()" src="./src/images/projets/ohmyfood.png" alt="OhmyFood!" data-id="2">
+				<img class="gallery-item" onclick="OpenModal()" src="./src/images/projets/Sophie-bluel.webp" alt="Sophie Bluel" data-id="3">
+				<img class="gallery-item" onclick="OpenModal()" src="./src/images/projets/kasa.png" alt="Kasa" data-id="4">
+				<img class="gallery-item" onclick="OpenModal()" src="./src/images/projets/nina_carducci.png" alt="Nina Carducci" data-id="5">
+				<img class="gallery-item" onclick="OpenModal()" src="./src/images/projets/argentbank1.png" alt="Argentbank" data-id="6">
 			</div>
 		</div>
 		<div id="modal" class="modal">
@@ -72,13 +71,12 @@
 					<h2 class="modal-title">Outils</h2>
 					<div id="modal-outils"></div>
 					<a id="github-link" class="github-link" href="#" target="_blank">lien GitHub</a>
-
 				</div>
 			</div>
 		</div>
 	</section>
 	<section id="services">
-		<h2 class="title">Mes services</h2>
+		<h1 class="title">Mes services</h1>
 		<div class="container">
 			<div class="service__description">
 					<h3>Langages de base</h3>
@@ -103,22 +101,22 @@
 			</div>
 		</div>
 			<div class="service__logo">
-				<img class="outil" src="assets/images/outils_dev/HTML5.png">
-				<img class="outil" src="assets/images/outils_dev/CSS.png">
-				<img class="outil" src="assets/images/outils_dev/javascript.png">
-				<img class="outil" src="assets/images/outils_dev/sass-logo.png">
-				<img class="outil" src="assets/images/outils_dev/react-logo.png">
-				<img class="outil" src="assets/images/outils_dev/redux.png">
-				<img class="outil" src="assets/images/outils_dev/mongoDB.png">
-				<img class="outil" src="assets/images/outils_dev/mySQL.png">
-				<div class="outil" src="assets/images/outils_dev/node.js.png">
+				<img class="outil" src="src/images/outils_dev/HTML5.png">
+				<img class="outil" src="src/images/outils_dev/CSS.png">
+				<img class="outil" src="src/images/outils_dev/javascript.png">
+				<img class="outil" src="src/images/outils_dev/sass-logo.png">
+				<img class="outil" src="src/images/outils_dev/react-logo.png">
+				<img class="outil" src="src/images/outils_dev/redux.png">
+				<img class="outil" src="src/images/outils_dev/mongoDB.png">
+				<img class="outil" src="src/images/outils_dev/mySQL.png">
+				<div class="outil" src="src/images/outils_dev/node.js.png">
 			</div>	
 	</section>
 </main>
 <footer id="contact">
 	<div class="container">
 		<div class="form-container">
-			<h3>Me contacter</h3>
+			<h1>Me contacter</h1>
 			<p> N’hésitez pas à m’écrire !</p>
 			<form action="#" method="post">
 				<label for="nom">Nom</label>

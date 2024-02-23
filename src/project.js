@@ -5,7 +5,7 @@ document.addEventListener('DOMContentLoaded', function () {
   const modalImage = document.getElementById('modal-image');
   const modalDescription = document.getElementById('modal-description');
   const modalOutils = document.getElementById('modal-outils');
-  const modalGithub = document.getElementById('');
+  const modalGithub = document.getElementById('github-link');
 
   function openModal(imageSrc, description, outils) {
     modal.style.display = 'block';
@@ -13,7 +13,7 @@ document.addEventListener('DOMContentLoaded', function () {
     modalDescription.innerHTML = description;
     modalOutils.innerHTML = outils || '';
     modalGithub.innerHTML =  github
-    console.log("au clique !");
+    console.log("au click !");
   }
 
   function closeModal() {
@@ -29,14 +29,14 @@ document.addEventListener('DOMContentLoaded', function () {
   // Ajout d'un gestionnaire d'événements pour chaque image de la galerie
   const galleryItems = document.querySelectorAll('.gallery-item');
   galleryItems.forEach(function (item) {
-  item.addEventListener('click', function () {
+    item.addEventListener('click', function () {
       const dataId = item.getAttribute('data-id');
       const project = findProjectById(dataId);
       if (project) {
-      const imagePath = project.src; // Utilisez le chemin complet de l'image
-      openModal(`./assets/${imagePath}`, project.description, project.outils, project.github);
+        const imagePath = project.src; // Utilisez le chemin complet de l'image
+        openModal(`./src/${imagePath}`, project.description, project.outils, project.github);
       }
-  });
+    });
   });
 
   function findProjectById(id) {
