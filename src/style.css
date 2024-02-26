@@ -1,6 +1,6 @@
 body {
-    max-width: 2560px;
-    margin: auto;
+    width: 100%;
+    margin: 0;
     font-style: normal;
     background-color: #5187f5;
     font-family: "Montserrat", sans-serif;
@@ -104,8 +104,6 @@ h1 {
     }
 }
 
-
-
 /***********présentation************/
 #about {
     width: 90%;
@@ -119,18 +117,11 @@ h1 {
     border-radius: 25px;
 }
 
-.picture {
-    width: 30%;
-    border-radius: 50%;
-}
-
 .portrait{
-border-radius: 50px;
+    width: 50%;
+    border-radius: 50%;
+    padding: 20px;
 } 
-
-.picture img {
-	width: 50%;
-}
 
 #about-me {
 	flex: 2
@@ -157,19 +148,248 @@ border-radius: 50px;
     width: 30%;
     display: block; 
     margin: 20px auto; 
-    background-color: #f26767; 
-    color: white;
+    background-color: white; 
+    color: #f26767;
     padding: 10px 20px; 
     text-decoration: none; 
+    font-size: 16px;
 }
-.curriculum {
-    display:flex; 
+/**************gallery***************/
+#gallery{
+    padding: 100px 0;
+}
+.container {
+    max-width: 90%;
+    margin: 20px auto;
+}
+
+.gallery {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+.title__gallery{
+    display: flex;
     justify-content: center;
-    color: #f26767;
-    margin: 50px; 
-    background-color: white;
-    font-size: 36px;
+    margin: 20px 0;
+    color: #f8f5e0;;
+}
+
+.gallery-item {
+    width: 45%;
+    height: 200px;
+    object-fit: cover;
+    margin : 20px;
+    cursor: pointer;
+    border-radius: 30px; 
+}
+
+.gallery-item:hover {
+    opacity: 0.8;
+}
+/***********modale**********/
+#modal {
+    display: none;
+}
+
+.modal {display: flex;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgb(0, 0, 0);
+    background-color: rgba(0, 0, 0, 0.9);
+}
+
+.modal-container {
+    position: relative; 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+}
+
+.modal-content {
+    max-width: 60%;
+    max-height: 80%;
+    border-radius: 30px; 
+}
+
+.modal-image {
+    width: 100%;
+    border-radius: 30px;
+}
+
+.modal-title{
+    display: flex;
+    justify-content: center;
+}
+
+.close {
+    color: black;
+    font-size: 40px;
+    font-weight: bold;
+    position: absolute;
+    top: 10px;
+    right: 15px;
+    cursor: pointer;
+}
+
+.close:hover {
+    color: #ccc;
+}
+
+#modal-description {
+    color: black;
+    text-align: center;
     padding: 20px;
+}
+
+#modal-outils {
+    color: black;
+    text-align: center;
+    padding: 20px;
+}
+
+.github-link {
+    display: flex;
+    justify-content: center;
+    color: white;
+    background-color: black;
+    font-size: 40px;
+    text-decoration: none;
+    padding: 60px 0; 
+}
+
+/************services***********/
+#services {
+   width: 90%;
+    margin: auto;
+    position: relative;
+    background-color: #f26767;
+    border-radius: 25px;
+    padding-bottom: 50px;
+}
+
+#services .container::before {
+    content: ' ';
+    position: absolute;
+    width: 100%;
+    height: 30%;
+    bottom: 0;
+    left: 0;
+    z-index: 0;
+}
+
+#services .container {
+    justify-content: space-between;
+    display: flex;
+    padding: 1em;
+}
+
+.title {
+    display: flex;
+    justify-content: center;
+    color: #f8f5e0;
+    padding: 0.5em;
+}
+
+.service__description {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    justify-content: center;
+    background-color: #f8f5e0;
+    border-radius: 30px;
+    width: 25%;
+    
+    padding: 20px;
+    margin: 0 10px;
+    }
+
+.service__logo {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 50px;
+    color: white;
+    padding: 80px;
+    background-color: #f8f5e0;
+}
+
+.outil {
+    width: auto;
+    height: 80px;
+    padding: 10px;
+    cursor: pointer;
+}
+
+/***********formulaire**********/
+#contact {
+    display: flex; 
+    justify-content: flex-end;
+}
+.form-container {
+    width: 40%;
+    background-color: #f8f5e0;
+    border-radius: 30px;
+    padding: 20px;
+    margin: 50px;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    align-items: flex-start;
+}
+
+form input,
+form textarea {
+    width: 100%;
+    background-color: transparent;
+    border: solid 1px;
+    margin-bottom: 20px;
+}
+
+form input[type="submit"] {
+    background-color: #f8f5e0;
+    padding: .5em 1em;
+}
+
+.info-contact {
+    margin-bottom: 0;
+}
+/*********responsive***********/
+@media all and (max-width: 768px) {
+
+/***********présentation************/
+#about {
+    width: 80%;
+	display: flex;
+    flex-direction: column;
+}
+
+.picture {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+}
+
+#about-me {
+	width: 80%;
+}
+
+.curriculum {
+    display: flex;
+    justify-content: center;
+    margin: 20px auto;  
+    font-size: 20px;
 }
 
 /**************gallery***************/
@@ -195,7 +415,7 @@ border-radius: 50px;
 
 .gallery-item {
     width: 40%;
-    height: 300px;
+    height: 20%;
     object-fit: cover;
     margin : 50px;
     cursor: pointer;
@@ -413,154 +633,8 @@ form input[type="submit"] {
 .info-contact {
     margin-bottom: 0;
 }
-/*********responsive***********/
-@media all and (max-width: 1180px) {
-    .picture {
-        flex: 2;
-    }
-
-    #about,
-    #contact .container {
-        align-items: center;
-    }
-
-    .about-me__title {
-        margin-top: 0;
-        margin-bottom: 1em;
-    }
-
-    #about-me h6,
-    #about-me p {
-        width: 100%;
-    }
-
-    .form-container {
-        width: 50%;
-    }
-
-    .picture.right img {
-        width: 100%;
-    }
 }
 
-@media all and (max-width: 1000px) {
-    #about {
-        flex-direction: column;
-    }
-
-    .picture.left{
-        width: 80%;
-        display: flex;
-        justify-content: center;
-        margin-top: 50px;
-    }
-
-    .picture.left::before {
-        width: 100%;
-        height: 30%;
-        position: absolute;
-        bottom: auto;
-        top: 0;
-        left: 0;
-        z-index: -1;
-    }
-
-    .about-me__title {
-        text-align: center;
-        margin-top: 1em;
-    }
-
-    #services .container {
-        flex-direction: column;
-    }
-
-    .service {
-        width: 100%;
-        max-width: 100%;
-        height: auto;
-        margin: 2em 0;
-    }
-
-    .service__description {
-        margin-bottom: 1em;
-        display: flex;
-        justify-content: center;
-    }
-
-    #services .container::before {
-        width: 30%;
-        height: 100%;
-        bottom: 0;
-        right: 0;
-        left: auto;
-        z-index: 0;
-    }
-
-    #contact .container {
-        flex-direction: column;
-    }
-
-    #contact .picture.right {
-        margin-top: 1em;
-    }
-
-    .form-container {
-        width: 100%;
-    }
-
-    .picture.right{
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-    }
-
-    .picture.right::before {
-        width: 100%;
-        height: 30%;
-        position: absolute;
-        bottom: 0;
-        right: 0;
-        z-index: -1;
-    }
-}
-
-@media all and (max-width: 425px) {
-    .top-header {
-        display: flex;
-        flex-direction: column;
-        padding-inline: 0;
-    }
-
-nav {
-    width: 100%;
-}
-
-
-#about {
-    padding: 20px;
-}
-
-#contact {
-    padding: 40px 60px;
-}
-
-form  {
-   width: 100%;
-}
-
-.form-container {
-    width: 100%;
-}
-
-#services .container {
-    display: flex;
-    padding: 2em 2em;
-    }
-
-
-.picture  img {
-    width: 100%;
-}
+@media all and (max-width: 375px) {
 
 }
-    
