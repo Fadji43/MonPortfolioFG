@@ -5,19 +5,19 @@ anime.timeline({loop: true})
     targets: '.cv',
     opacity: [0, 1],
     easing: 'easeInOutQuad',
-    duration: 1500,
+    duration: 400,
   })
   .add({
     targets: '.cv',
     opacity: [1, 0],
     easing: 'easeInOutQuad',
-    duration: 1500,
+    duration: 400,
     delay: 1000, 
   })
   anime({
     targets: '.cv .circle-white-dashed',
     rotateZ: 360,
-    duration: 8000,
+    duration: 5000,
     easing: "linear",
     loop: true
   });
@@ -65,9 +65,17 @@ document.addEventListener('DOMContentLoaded', function() {
     delay: (el, i) => 800 * i
   }).add({
     targets: '.anim__cvName',
-    opacity: 0,
+    opacity: 1,
     duration: 1000,
     easing: "easeOutExpo",
-    delay: 1000
+    delay: 5000
+  });
+});
+
+/***********fleche**********/
+document.addEventListener('DOMContentLoaded', function() {
+  // Écoutez le clic sur la flèche
+  document.getElementById('backArrow').addEventListener('click', function() {
+      window.location.href = 'index.html'; // Remplacez 'index.html' par le chemin de votre page index
   });
 });
