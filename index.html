@@ -16,7 +16,7 @@
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/2.0.2/anime.min.js"></script>
     <script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
 	<script src="./src/project.js"></script>
-	<script src="./src/cv-animation.js"></script>
+	<script src="./src/animation.js"></script>
 </head>
 <body>
 <header>
@@ -42,9 +42,9 @@
 		<div id="about-me">
 			<h2 class="about-me__title">Je m'appelle Fanny Gimenez</h2>
 			<p class="about-me__introduction">
-			J’ai découvert le monde du développement web et celui-ci a attisé mon curiosité. 
-			Au terme d’une formation très enrichissante je souhaite mettre mes nouvelles compétences à profit et proposer mes services en tant que développeur web et ainsi relever des nouveaux défis stimulants et de contribuer à des projets passionnants. 
-			L'optimisme et la persévérance sont les piliers de ma personnalité, et je cherche constamment répondre au mien au besoin de mes collaborateurs.</p>
+			J’ai découvert le monde du développement web et celui-ci a attisé ma curiosité. 
+			Je souhaite mettre mes nouvelles compétences à profit et proposer mes services en tant que développeur web et ainsi relever des nouveaux défis stimulants et de contribuer à des projets passionnants. 
+			L'optimisme et la persévérance sont les piliers de ma personnalité, et je cherche constamment à répondre au mien au besoin de mes collaborateurs.</p>
 			<a href="cv.html">
 				<div class="cv">
 					<h1 class="letters">CV</h1>
@@ -57,28 +57,33 @@
 		<h1 class="title__gallery">Mes réalisations</h1>
 		<div class="container">
 			<div class="gallery" >
-				<img class="gallery-item" onclick="OpenModal()" src="./src/images/projets/booki.png" alt="booki" data-id="1">
-				<img class="gallery-item" onclick="OpenModal()" src="./src/images/projets/ohmyfood.png" alt="OhmyFood!" data-id="2">
-				<img class="gallery-item" onclick="OpenModal()" src="./src/images/projets/Sophie-bluel.webp" alt="Sophie Bluel" data-id="3">
-				<img class="gallery-item" onclick="OpenModal()" src="./src/images/projets/kasa.png" alt="Kasa" data-id="4">
-				<img class="gallery-item" onclick="OpenModal()" src="./src/images/projets/nina_carducci.png" alt="Nina Carducci" data-id="5">
-				<img class="gallery-item" onclick="OpenModal()" src="./src/images/projets/argentbank1.png" alt="Argentbank" data-id="6">
+				<img class="gallery-item" src="./src/images/projets/booki.webp" alt="booki" data-id="1">
+				<img class="gallery-item" src="./src/images/projets/ohmyfood.webp" alt="OhmyFood!" data-id="2">
+				<img class="gallery-item" src="./src/images/projets/Sophie-bluel.webp" alt="Sophie Bluel" data-id="3">
+				<img class="gallery-item" src="./src/images/projets/kasa.webp" alt="Kasa" data-id="4">
+				<img class="gallery-item" src="./src/images/projets/nina_carducci.webp" alt="Nina Carducci" data-id="5">
+				<img class="gallery-item" src="./src/images/projets/argentbank1.webp" alt="Argentbank" data-id="6">
 			</div>
 		</div>
 		<div id="modal" class="modal">
 			<div class="modal-container">
 				<div class="modal-content">
-					<img id="modal-image">
-					<i class="fa-solid fa-xmark close" onclick="closeModal()"></i>
+					<div class="modal-slide">
+						<img id="modal-image" class="modal-image">
+						<i class="fa-solid fa-angle-left arrowleft"></i>
+						<i class="fa-solid fa-angle-right arrowright"></i>
+						<i class="fa-solid fa-xmark close"></i>
+					</div>
 					<h2 class="modal-title">Description</h2>
-					<div id="modal-description" class="modal__text"></div>
+					<div id="modal-description" class="modal-description"></div>
 					<h2 class="modal-title">Mission</h2>
-					<div id="modal-mission" class="modal__text"></div>
+					<div id="modal-mission" class="modal-mission"></div>
+					<div id="modal-objectifs" class="modal-objectifs"></div>
 					<h2 class="modal-title">Outils</h2>
 					<div id="modal-outils"></div>
 					<a id="github-link" class="github-link" href="githubLink" target="_blank">lien GitHub</a>
 				</div>
-			</div>
+			</div>	
 		</div>
 	</section>
 	<section id="services">

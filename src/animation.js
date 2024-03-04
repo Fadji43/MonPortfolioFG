@@ -74,8 +74,11 @@ document.addEventListener('DOMContentLoaded', function() {
 
 /***********fleche**********/
 document.addEventListener('DOMContentLoaded', function() {
-  // Écoutez le clic sur la flèche
-  document.getElementById('backArrow').addEventListener('click', function() {
-      window.location.href = 'index.html'; // Remplacez 'index.html' par le chemin de votre page index
-  });
+  var backArrowElement = document.getElementById('backArrow');
+  console.log(backArrowElement);  // Vérifiez s'il est null ou s'il s'agit de l'élément réel
+  if (backArrowElement) {
+      backArrowElement.addEventListener('click', function() {
+          window.location.href = 'index.html';
+      });
+  }
 });

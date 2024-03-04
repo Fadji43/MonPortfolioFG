@@ -105,14 +105,14 @@ h1 {
 
 /***********présentation************/
 #about {
-    max-width: 85%;
+    max-width: 90%;
 	display: flex;
     justify-content: center;
     align-items: center;
 	background-color: #f26767;
 	position: relative;
     padding: 20px;
-    margin-left: 100px;
+    margin-left: 80px;
     border-radius: 25px;
 }
 
@@ -155,7 +155,6 @@ h1 {
   
 .cv .letters {
     position: absolute;
-    font-family: "Marhey", sans-serif;
     font-weight: 800;
     font-size: 4.5em;
     color: #f26767;
@@ -220,7 +219,8 @@ h1 {
     display: none;
 }
 
-.modal {display: flex;
+.modal {
+    display: flex;
     justify-content: center;
     align-items: center;
     position: fixed;
@@ -245,27 +245,37 @@ h1 {
 .modal-content {
     display: flex;
     justify-content: center;
-    max-width: 60%;
+    max-width: 80%;
     max-height: 100%;
-    border-radius: 30px; 
+    border-radius: 30px;
 }
 
+.modal-slide {
+    position: relative;
+}
 .modal-image {
     width: 100%;
     border-radius: 30px;
 }
 
-.modal-title{
-    display: flex;
-    justify-content: center;
+.arrowleft{
+    position: absolute;
+    font-size: 100px;
+    top: 45%; 
+    left: 5%;
+    color: white; 
+    border-color: 2px solid black;
 }
 
-.modal__text{
-    display: flex;
-    justify-content: baseline;
-    padding: 20px;
-    text-indent: 20px;
+.arrowright {
+    position: absolute;
+    font-size: 100px;
+    top: 45%; 
+    left: 90%;
+    color: white; 
 }
+
+
 .close {
     color: black;
     font-size: 40px;
@@ -280,6 +290,21 @@ h1 {
     color: #ccc;
 }
 
+.modal-title{
+    display: flex;
+    justify-content: center;
+}
+
+.modal__text{
+    display: flex;
+    justify-content: baseline;
+    padding: 20px;
+    text-indent: 20px;
+}
+
+.modal-description {
+    padding: 20px;
+}
 #modal-outils {
     text-align: center;
     padding: 20px;;
@@ -469,7 +494,7 @@ p {
     .title__gallery{
         display: flex;
         justify-content: center;
-        margin: 20px 0;
+        margin: 20px;
         color: #f8f5e0;;
     }
     
@@ -481,27 +506,73 @@ p {
         opacity: 0.8;
     }
     /***********modale**********/
+    #modal {
+        display: none;
+    }
+    
+    .modal {display: flex;
+        justify-content: center;
+        align-items: center;
+        position: fixed;
+        z-index: 1;
+        left: 0;
+        top: 0;
+        width: 100%;
+        height: 100%;
+        overflow: auto;
+        background-color: rgb(0, 0, 0);
+        background-color: rgba(0, 0, 0, 0.9);
+    }
+    
     .modal-container {
+        position: relative; 
         display: flex;
         justify-content: center;
         align-items: center;
-
+        height: 100%;
     }
     
     .modal-content {
-        max-width: 50%;
+        display: flex;
+        justify-content: center;
+        max-width: 60%;
+        max-height: 100%;
+        border-radius: 30px; 
     }
-
-    #modal-description {
-        color: black;
-        text-align: baseline;
+    
+    .modal-image {
+        width: 100%;
+        border-radius: 30px;
+    }
+    
+    .modal-title{
+        display: flex;
+        justify-content: center;
+    }
+    
+    .modal__text{
+        display: flex;
+        justify-content: baseline;
         padding: 20px;
+        text-indent: 20px;
+    }
+    .close {
+        color: black;
+        font-size: 40px;
+        font-weight: bold;
+        position: absolute;
+        top: 10px;
+        right: 15px;
+        cursor: pointer;
+    }
+    
+    .close:hover {
+        color: #ccc;
     }
     
     #modal-outils {
-        color: black;
         text-align: center;
-        padding: 20px;
+        padding: 20px;;
     }
     
     .github-link {
