@@ -114,7 +114,6 @@ document.addEventListener('DOMContentLoaded', function () {
         "id": 3,
         "src": [
           "images/projets/Sophie-bluel.webp",
-          "images/projets/Sophie-bluel_1.webp",
           "images/projets/Sophie-bluel_2.webp",
           "images/projets/Sophie-bluel_3.webp",
         ],
@@ -145,27 +144,25 @@ document.addEventListener('DOMContentLoaded', function () {
       {
         "id": 5,
         "src":[
-          "images/projets/nina-carducci.webp",
-          "images/projets/nina-carducci_2.webp",
-          "images/projets/Nina_Lighthouse_av.webp",
-          "images/projets/Nina_Lighthouse_ap.webp"
+          "images/projets/724events_1.webp",
+          "images/projets/724events_2.webp",
+          "images/projets/724events_3.webp",
         ], 
-        "description": "Ce projet vise a accomplir une analyse approfondie de du site web de Nina Carducci, et identifié des opportunités d'optimisation SEO significatives. L’objectif est de maximiser votre visibilité sur les moteurs de recherche, d'attirer un public plus large et d'améliorer la performance globale du site.",
-        "mission": "Rapport d’optimisation SEO : ",
-        "objectif1": "Premier audit pour faire le point : évaluation des différents aspects du site web : performance, accessibilité, meilleure pratique et optimisation pour les moteurs de recherches",
-        "objectif2": "Amélioration",
-        "objectif3": "Présentation de l’audit final",
-        "outils": "Lighthouse",
+        "description": "La mission est de perfectionner l'expérience en ligne de 724 Events en identifiant et en résolvant rapidement les problèmes potentiels du site vitrine. Grâce à des tests unitaires approfondis et à l'utilisation judicieuse des outils à notre disposition, nous sommes déterminés à élever la qualité de notre site pour qu'il soit à la hauteur de la réputation exceptionnelle de 724 Events",
+        "mission": "Débuggez le site d'agence événementiel ",
+        "objectif1": "Identifier les problème et trouver leurs sources",
+        "objectif2": "Résolution des erreurs",
+        "objectif3": "implémentez de nouveaux tests unitaires",
+        "outils": "HTML/ CSS/ REACT",
         "githubLink": "https://github.com/Fadji43/Nina_Carducci.git"
       },
       {
         "id": 6,
         "src": [
-          "images/projets/argentbank1.webp",
-          "images/projets/argentbank_2.webp",
           "images/projets/argentbank_3.webp",
           "images/projets/argentbank_6.webp",
-          "images/projets/argentbank_4.webp"
+          "images/projets/argentbank_4.webp",
+          "images/projets/argentbank_2.webp"
         ],
         "description": "L’objectif est la mise en place un tableau de bord innovant pour les utilisateurs de notre application bancaire. Après avoir accès au compte utilisateur, ce tableau de bord offrira une vue d'ensemble complète des comptes, des transactions et des informations financières, tout en intégrant des profils utilisateur pour une personnalisation optimale. ",
         "mission": "A partir de la maquette : ",

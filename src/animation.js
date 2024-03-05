@@ -45,6 +45,7 @@ document.addEventListener('DOMContentLoaded', function() {
 
     // Attach the event listener to the window scroll event
     window.addEventListener('scroll', function() {
+      console.log('appel iscrolledTo')
       if (isScrolledToBottom()) {
         animateRocket();
         // Remove the event listener once the animation is triggered to avoid multiple executions
