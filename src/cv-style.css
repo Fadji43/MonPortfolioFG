@@ -59,7 +59,7 @@ header {
   }
 /*************contact**************/
 .contact{
-    flex: 1;
+    flex: 1.2;
     flex-direction: column; 
     padding: 20px;
     background-color: #f8f5e0;
@@ -107,39 +107,56 @@ img {
 
 /*************experience**************/
 .experience{
-  flex: 2; 
-  padding: 20px;
+  flex: 1.8; 
+  padding: 25px;
 }
 
 .experience-title {
   font-weight: bold;
 }
 
+.post {
+  padding: 20px;
+}
 /***********bloc2**************/
 #secondblock {
   display: flex;
   flex-direction: row;
-  justify-content: center;
-  background-color: #f8f5e0;
-  border-radius: 30px;
-  margin: 3%;
 }
 /*************competences**************/
-.skill{
- display: flex; 
- flex: 1;
- flex-direction: column;
- line-height: 0.5;
- padding: 20px 0;
- margin: 0 5%;
+.skill1, .skill2, .skill3 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #f8f5e0;
+  border-radius: 30px;
+  flex-direction: column;
+  line-height: 1;
+  padding: 20px;
+  margin: 0 2%;
+  width: 30%;
+  min-height: 250px;
 }
 
-.formation{
-  flex: 2;
+.dropdown-diplome, .dropdown-formation, .dropdown-logiciels {
+  display: none;
 }
 
-.logiciel{
-  flex: 3;
+#formationToggle, #diplomeToggle, #logicielsToggle {
+  font-size: 50px;
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  transition: transform 0.3s; 
+}
+
+h2.active {
+  color: #f26767;
+  transform: scale(0.8); 
+}
+
+.dropdown-diplome.active, .dropdown-formation.active, .dropdown-logiciels.active {
+  display: block;
 }
 /*************qualite**************/
 .quality {
