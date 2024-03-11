@@ -60,20 +60,6 @@ function animateRocket() {
     opacity: { value: 1, duration: 2000, easing: 'easeOutQuad' }, 
     easing: 'easeOutQuad',
     duration: 2000,
-    delay: 500
+    delay: -2
   });
 }
-
-  
-
-
-/***********fleche**********/
-document.addEventListener('DOMContentLoaded', function() {
-  var backArrowElement = document.getElementById('backArrow');
-  console.log(backArrowElement);  // Vérifie s'il est null ou s'il s'agit de l'élément réel
-  if (backArrowElement) {
-      backArrowElement.addEventListener('click', function() {
-          window.location.href = 'index.html';
-      });
-  }
-});

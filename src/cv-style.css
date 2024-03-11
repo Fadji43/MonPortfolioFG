@@ -4,7 +4,6 @@ body {
     margin: 0;
     font-style: normal;
     font-family: "Montserrat", sans-serif;
-    font-optical-sizing: auto;
     background-color: #f26767;
 }
 
@@ -124,7 +123,7 @@ img {
   flex-direction: row;
 }
 /*************competences**************/
-.skill1, .skill2, .skill3 {
+.skill {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -164,7 +163,6 @@ h2.active {
   justify-content: center;
   font-family: "Marhey";
   font-weight: 800;
-  font-size: 1,5em;
   text-transform: uppercase;
   letter-spacing: 0.2em;
   padding: 50px;
@@ -206,16 +204,16 @@ h2.active {
   flex-direction: column;
   justify-content: center;
   background-color: #f8f5e0;
-  border-radius: 30px;
+  border-radius: 0;
   }
   /*************competences**************/
-  .skill{
-  display: flex; 
-  flex: 1;
-  flex-direction: column;
-  padding: 20px;
-  margin: 0 5%;
+  .skill {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    border-radius: 0;
   }
+  
 
   /*************qualite**************/
   .quality {
@@ -246,16 +244,6 @@ h2.active {
   flex-direction: column;
   margin: 0;
   }
-  
-  /*************competences**************/
-  .skill{
-  display: flex; 
-  flex: 1;
-  flex-direction: column;
-  padding: 20px;
-  margin: 0 5%;
-  line-height: 1.5em;
-}
 
   /*************qualite**************/
   .quality {

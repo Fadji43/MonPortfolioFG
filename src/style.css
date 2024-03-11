@@ -1,10 +1,8 @@
 body {
-    width: 1440x;
     margin: 0;
     font-style: normal;
     font-family: "Montserrat", sans-serif;
-    font-optical-sizing: auto;
-    background-image: url('images/ciel-etoile.png');
+    background-image: url('images/ciel-etoile.webp');
     background-size: cover; 
     background-position: center; 
     background-repeat: no-repeat;
@@ -109,7 +107,7 @@ h1 {
 	display: flex;
     justify-content: center;
     align-items: center;
-	background-color: #f26767;
+	background-color: #A60C0C;
 	position: relative;
     padding: 20px;
     margin: 0 8% ;
@@ -157,7 +155,7 @@ h1 {
     position: absolute;
     font-weight: 800;
     font-size: 4.5em;
-    color: #f26767;
+    color: #A60C0C;
     width: 2em;
     height: 2em;
     display: flex;
@@ -267,14 +265,14 @@ h1 {
     margin-top: 20px;
 }
 
+
 .arrowleft{
     position: absolute;
     font-size: 50px;
-    top: 45%; 
+    top: 45%;
     left: 3%;
-    color: #f8f5e0; 
-    -webkit-text-stroke-width: 3px;
-    -webkit-text-stroke-color:#f26767;
+    color: #f8f5e0;
+    text-shadow: -1.5px -1.5px 1.5px #A60C0C, 1.5px -1.5px 1.5px #A60C0C, -1px 1px 1px #A60C0C, 1.5px 1.5px 1.5px #A60C0C;
 }
 
 .arrowright {
@@ -284,13 +282,12 @@ h1 {
     left: 93%;
     color: black; 
     color: #f8f5e0; 
-    -webkit-text-stroke-width: 3px;
-    -webkit-text-stroke-color:#f26767;
+    text-shadow: -1.5px -1.5px 1.5px #A60C0C, 1.5px -1.5px 1.5px #A60C0C, -1px 1px 1px #A60C0C, 1.5px 1.5px 1.5px #A60C0C;
 }
 
 
 .close {
-    color: #f26767;
+    color: #A60C0C;
     font-size: 40px;
     font-weight: bold;
     position: absolute;
@@ -310,7 +307,7 @@ h1 {
 
 .modal__text{
     display: flex;
-    justify-content: baseline;
+    justify-content: center;
     padding: 20px;
     text-indent: 20px;
 }
@@ -338,7 +335,7 @@ h1 {
     width: 85%;
     margin: 8%;
     position: relative;
-    background-color: #f26767;
+    background-color: #A60C0C;
     border-radius: 25px;
     padding-bottom: 50px;
 }
@@ -384,6 +381,10 @@ h1 {
     height: 80px;
     padding: 10px;
     cursor: pointer;
+}
+
+.outil:hover {
+    transform: scale(1.5); 
 }
 
 /***********formulaire**********/
@@ -432,7 +433,7 @@ textarea {
 }
 
 button {
-    background-color:#f26767;
+    background-color:#A60C0C;
     color: #fff;
     padding: 10px 15px;
     border: none;
@@ -560,7 +561,7 @@ p {
     
     .modal__text{
         display: flex;
-        justify-content: baseline;
+        justify-content: center;
         padding: 20px;
         text-indent: 20px;
     }
