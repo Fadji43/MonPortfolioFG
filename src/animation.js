@@ -28,7 +28,6 @@ document.addEventListener('DOMContentLoaded', function() {
   const observer = new IntersectionObserver((entries) => {
     for (const entry of entries) {
       if (entry.isIntersecting) {
-        animateRocket();
         observer.unobserve(entry.target);
       }
     }
@@ -45,21 +44,5 @@ document.addEventListener('DOMContentLoaded', function() {
   }
 });
 
-function animateRocket() {
-  console.log('rocket')
-  anime({
-    targets: '#rocket',
-    translateX: [ 
-      { value: '-100vw', duration: 0 }, 
-      { value: '0', duration: 2000, easing: 'easeOutQuad' } 
-    ],
-    translateY: [
-      { value: '-100vh', duration: 0 }, 
-      { value: '0', duration: 2000, easing: 'easeOutQuad' }
-    ],
-    opacity: { value: 1, duration: 2000, easing: 'easeOutQuad' }, 
-    easing: 'easeOutQuad',
-    duration: 2000,
-    delay: -2
-  });
-}
+
+

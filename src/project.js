@@ -88,7 +88,7 @@ document.addEventListener('DOMContentLoaded', function () {
             "images/projets/booki_3.webp"
         ],
         "description": "Booki est un compagnon de voyage ultime pour une expérience de location d'hébergements et d'activités, personnalisée en fonction de votre emplacement. La plateforme innovante allie la praticité de la réservation en ligne à la découverte locale, offrant une gamme étendue d'options d'hébergement et d'activités. Il comporte un catalogue d'hébergements, allant des hébergements de luxe aux options plus abordables, le tout géolocalisé pour vous permettre de trouver l'endroit idéal. ",
-        "mission": "A partir de la maquette : Création  d’une application en first mobile ",
+
         "objectif1": "Création de la page d’accueil",
         "objectif2": "Création des pages logements avec les détails",
         "objectif3": "Insertion d’animation css",
@@ -103,9 +103,8 @@ document.addEventListener('DOMContentLoaded', function () {
           "images/projets/ohmyfood_2.webp"
         ],
         "description": "Oh my Food se lance dans le développement d'un site mobile first, une plateforme novatrice qui compile les menus exquis de nos restaurants partenaires. L’objectif est de faciliter non seulement la découverte de ces joyaux culinaires, mais aussi de rendre la réservation en ligne et la personnalisation de votre repas aussi simples qu'un clic. Imaginez pouvoir composer votre menu idéal parmi une sélection de propositions alléchantes, le tout à portée de main, sur votre smartphone.",
-        "mission": "A partir de la maquette : ",
         "objectif1": "Création de la page d’accueil",
-        "objectif2": "création des pages des restaurateurs avec détails des menus",
+        "objectif2": "Création des pages des restaurateurs avec détails des menus",
         "objectif3": "Insertion de différentes animations css",
         "outils": "HTML & CSS",
         "githubLink": "https://github.com/Fadji43/OhmyFood.git"
@@ -118,10 +117,9 @@ document.addEventListener('DOMContentLoaded', function () {
           "images/projets/Sophie-bluel_3.webp",
         ],
         "description": "Le projet est de créer une plateforme en ligne à la hauteur du talent et de la créativité d’une architecte d'intérieur. Conçu pour mettre en avant ses projets les plus emblématiques, le site permettra également aux visiteurs de plonger dans l'univers inspirant de l'architecte, découvrant ainsi le mariage subtil entre formes, couleurs et fonctionnalités.",
-        "mission": "A partir de la maquette : ",
         "objectif1": "Création de la page d’accueil",
         "objectif2": "Affichage des travaux à partir du back-end",
-        "objectif3": "connexion / déconnexion et modification des affichages",
+        "objectif3": "Connexion / déconnexion et modification des affichages",
         "outils": "HTML/ CSS/ JS",
         "githubLink": "https://github.com/Fadji43/Portfolio-architecte-sophie-bluel.git"
       },
@@ -134,7 +132,6 @@ document.addEventListener('DOMContentLoaded', function () {
           "./images/projets/kasa_4.webp"
         ],
         "description": "La mission est de repenser et de redéfinir la plateforme Kasa pour qu'elle soit à la hauteur des attentes de nos utilisateurs, en créant une interface conviviale et moderne qui facilite la recherche, la réservation et l'expérience globale de la location d'appartements. La refonte vise à rendre la plateforme plus intuitive, plus interactive et à offrir une esthétique raffinée pour accompagner chaque étape du processus de location.",
-        "mission": "A partir de la maquette : ",
         "objectif1": "Création de la page d’accueil",
         "objectif2": "Création des pages logements",
         "objectif3": "Connexion à la base de donnée",
@@ -149,10 +146,9 @@ document.addEventListener('DOMContentLoaded', function () {
           "images/projets/724events_3.webp",
         ], 
         "description": "La mission est de perfectionner l'expérience en ligne de 724 Events en identifiant et en résolvant rapidement les problèmes potentiels du site vitrine. Grâce à des tests unitaires approfondis et à l'utilisation judicieuse des outils à notre disposition, nous sommes déterminés à élever la qualité de notre site pour qu'il soit à la hauteur de la réputation exceptionnelle de 724 Events",
-        "mission": "Débuggez le site d'agence événementiel ",
         "objectif1": "Identifier les problème et trouver leurs sources",
         "objectif2": "Résolution des erreurs",
-        "objectif3": "implémentez de nouveaux tests unitaires",
+        "objectif3": "Implémentez de nouveaux tests unitaires",
         "outils": "HTML/ CSS/ REACT",
         "githubLink": "https://github.com/Fadji43/Nina_Carducci.git"
       },
@@ -165,9 +161,8 @@ document.addEventListener('DOMContentLoaded', function () {
           "images/projets/argentbank_2.webp"
         ],
         "description": "L’objectif est la mise en place un tableau de bord innovant pour les utilisateurs de notre application bancaire. Après avoir accès au compte utilisateur, ce tableau de bord offrira une vue d'ensemble complète des comptes, des transactions et des informations financières, tout en intégrant des profils utilisateur pour une personnalisation optimale. ",
-        "mission": "A partir de la maquette : ",
         "objectif1": "Création de la page d’accueil",
-        "objectif2": "création de la page profil utilisateur ",
+        "objectif2": "Création de la page profil utilisateur ",
         "objectif3": "Gestion d’accès à la page utilisateur avec validation des identifiants et mot de passe, modification «/username/» par l’utilisateur", 
         "outils": "HTML/ CSS/ REACT/ Redux/ MongoDB Atlas",
         "githubLink": "https://github.com/Fadji43/ArgentBank-website.git"
