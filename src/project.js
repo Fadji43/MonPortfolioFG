@@ -112,9 +112,9 @@ document.addEventListener('DOMContentLoaded', function () {
       {
         "id": 3,
         "src": [
-          "images/projets/Sophie-bluel.webp",
-          "images/projets/Sophie-bluel_2.webp",
-          "images/projets/Sophie-bluel_3.webp",
+          "images/projets/sophie-bluel.webp",
+          "images/projets/sophie-bluel_2.webp",
+          "images/projets/sophie-bluel_3.webp",
         ],
         "description": "Le projet est de créer une plateforme en ligne à la hauteur du talent et de la créativité d’une architecte d'intérieur. Conçu pour mettre en avant ses projets les plus emblématiques, le site permettra également aux visiteurs de plonger dans l'univers inspirant de l'architecte, découvrant ainsi le mariage subtil entre formes, couleurs et fonctionnalités.",
         "objectif1": "Création de la page d’accueil",
