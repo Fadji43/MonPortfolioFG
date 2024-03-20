@@ -6,7 +6,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<meta name="description" content="Portfolio de Fanny Gimenez">
     <title>Fanny Gimenez</title>
-    <link rel="stylesheet" href="./bootstrap/bootstrap.min.css">
     <link rel="stylesheet" href="./src/style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
 	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -15,7 +14,6 @@
     <link href="https://fonts.googleapis.com/css2?family=Marhey:wght@300..700&family=Montserrat+Alternates:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Shantell+Sans:ital,wght@0,300..800;1,300..800&display=swap" rel="stylesheet">
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/2.0.2/anime.min.js"></script>
-    <script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
 	<script src="./src/project.js"></script>
 	<script src="./src/animation.js"></script>
 </head>
@@ -39,19 +37,19 @@
 </header>
 <main>
 	<section id="about">
-			<img class="portrait" src="src/images/moi4.webp" alt="portrait">
+		<img class="portrait" src="src/images/moi4.webp" alt="portrait">
 		<div id="about-me">
 			<h2 class="about-me__title">Je m'appelle Fanny Gimenez</h2>
 			<p class="about-me__introduction">
 			J’ai découvert le monde du développement web et celui-ci a attisé ma curiosité. 
 			Je souhaite mettre mes nouvelles compétences à profit et proposer mes services en tant que développeur web et ainsi relever des nouveaux défis et de contribuer à des projets. 
 			</p>
-			<a href="cv.html">
-				<div class="cv">
+			<div class="cv">
+				<a href="cv.html">
 					<h1 class="letters">CV</h1>
 					<div class="circle-white-dashed"></div>
-				</div>
-			</a>
+				</a>
+			</div>
 		</div>
 	</section>
 	<section id="gallery">
@@ -80,13 +78,14 @@
 					<div class="modal-project">
 						<div class="project-details">
 							<h2 class="modal-title">Mission</h2>
-							<div id="modal-mission" class="modal-mission"></div>
-							<div id="modal-objectifs" class="modal-objectifs"></div>
+							<p id="modal-objectifs" class="modal-objectifs"></p>
 						</div>
 						<div class="project-details">
 							<h2 class="modal-title">Outils</h2>
-							<div id="modal-outils"></div>
+							<p id="modal-outils"></p>
 							<a id="github-link" class="github-link" href="githubLink" target="_blank">lien GitHub</a>
+							<img id="github-image" class="github-image" href="githubLink" src="src/images/outils_dev/github_white.png" alt="Logo GitHub">
+							</a>
 						</div>
 					</div>
 				</div>
@@ -133,7 +132,6 @@
 		<h2>Me contacter</h2>
 		<p> N’hésitez pas à m’écrire !</p>
 		<img class="form-img" src="src/images/fusee.webp" id="rocket" alt="fusée">
-		<button type="submit">Envoyer</button>
 	  </div>
 	  <div class="form-column">
 		<label for="nom">Nom:</label>
@@ -142,9 +140,10 @@
 		<input type="email" id="email" name="email" required>
 		<label for="message">Message:</label>
 		<textarea id="message" name="message" rows="1" required></textarea>
+		<button type="submit">Envoyer</button>
 	  </div>
 	</div>
-	<p>© 2024 Gimenez Fanny, Tous droits réservés</p>
+	<p class="copyright">© 2024 Gimenez Fanny, Tous droits réservés</p>
   </footer>  
 </body>
 </html>

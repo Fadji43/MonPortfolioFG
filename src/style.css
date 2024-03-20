@@ -1,4 +1,4 @@
-body {
+body { 
     margin: 0;
     font-style: normal;
     font-family: "Montserrat", sans-serif;
@@ -8,6 +8,9 @@ body {
     background-repeat: no-repeat;
 }
 
+main {
+    width: 100%;
+}
 h1 {
     font-size: 48px;
   }
@@ -39,7 +42,7 @@ h1 {
     display: flex;
     list-style-type: none;
     font-size: 14px;
-    margin: 0;
+    margin: 0 50px;
 }
 
 .nav li {
@@ -109,13 +112,12 @@ h1 {
     align-items: center;
 	background-color: #A60C0C;
 	position: relative;
-    padding: 20px;
-    margin: 0 8% ;
+    margin: 0 8%;
     border-radius: 25px;
 }
 
 .portrait{
-    width: 30%;
+    width: 25%;
     border-radius: 50%;
     padding: 20px;
 } 
@@ -143,16 +145,17 @@ h1 {
 
 /**********btn-cv**************/
 .cv {
+    position: relative;
     display: flex;
     justify-content: flex-end;
     text-decoration: none;
+
 }
 .cv a {
     text-decoration: none;
   }
   
 .cv .letters {
-    position: absolute;
     font-weight: 800;
     font-size: 4.5em;
     color: #A60C0C;
@@ -163,10 +166,11 @@ h1 {
     align-items: center;
     background-color: #f8f5e0;
     border-radius: 50%;
+    margin-right: 50px;
   }
 
   .cv .circle-white-dashed {
-    position: relative;
+    position: absolute;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -175,8 +179,8 @@ h1 {
     border: 2px dashed #f8f5e0;
     width: 10em;
     height: 10em;
-    top: -8px;
-    right: -8px;
+    top: 50px;
+    right: 41px;
   }
 
 /**************gallery***************/
@@ -246,6 +250,8 @@ h1 {
     flex-direction: column;
     align-items: center;
     max-width: 55%;
+    background-color: #f8f5e0;
+    border-radius: 25px;
     overflow-y: auto;
 }
 
@@ -308,10 +314,11 @@ h1 {
 }
 
 .modal-description {
-    padding: 20px;
+    padding:30px;
     text-indent: 20px;
 }
 .modal-project {
+    width: 100%;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
@@ -322,8 +329,13 @@ h1 {
     width: 100%;
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    align-items: center;
     margin: 20px;
+}
+#modal-objectifs{
+    display: flex; 
+    flex-direction: column; 
+    text-align: center;
 }
 #modal-outils {
     text-align: center;
@@ -331,6 +343,7 @@ h1 {
 }
 
 .github-link {
+    width: 50%;
     display: flex;
     justify-content: center;
     color: white;
@@ -340,6 +353,9 @@ h1 {
     padding: 10px; 
     border-radius: 30px;
     margin-top: 15%;
+}
+.github-image {
+    display: none;
 }
 
 /************competences***********/
@@ -382,7 +398,8 @@ h1 {
     display: flex;
     justify-content: space-around;
     align-items: center;
-    height: 50px;
+    max-width:100%;
+    height: 25px;
     color: white;
     padding: 80px;
     background-color: #f8f5e0;
@@ -390,7 +407,7 @@ h1 {
 
 .outil {
     width: auto;
-    height: 80px;
+    height: 60px;
     padding: 10px;
     cursor: url('./rocket.svg') 16 16, auto;
     transition: all 200ms;
@@ -420,12 +437,13 @@ h1 {
 }
 
 .form-column {
+    display: flex;
+    flex-direction: column;
     flex: 1;
-    justify-content: space-around;
+
     padding-right: 20px;
     box-sizing: border-box;
 }
-
 
 @keyframes appearFromTopLeft {
     0% {
@@ -437,12 +455,11 @@ h1 {
       opacity: 1;
     }
   }
-  
-  #rocket {
+
+#rocket {
     width: 150px;
     animation: appearFromTopLeft 2s ease-out forwards;
   }
-
 
 label {
     display: block;
@@ -458,6 +475,8 @@ textarea {
 }
 
 button {
+    display: flex;
+    justify-content: center;
     background-color:#A60C0C;
     color: #fff;
     padding: 10px 15px;
@@ -466,17 +485,18 @@ button {
     cursor: url('./rocket.svg') 16 16, auto;
 }
 
-button:hover {
+button:hover { 
     background-color: #f8f5e0;
 }
 
-p {
+.copyright {
     text-align: center;
     margin-top: 20px;
 }
 
 /*********responsive***********/
 @media all and (max-width: 768px) {
+
 /************nav**************/
 .top-header {
     display: flex;
@@ -484,10 +504,11 @@ p {
 }
 /***********présentation************/
     #about {
-        min-width:100%;
+        min-width: 100%;
         display: flex;
         flex-direction: column;
-        margin-left: 0;
+        padding: 30px;
+        margin: 0;
         border-radius: 0;
     }
     
@@ -505,11 +526,12 @@ p {
     .cv {
         display: flex;
         justify-content: center;
-        text-decoration: none;
-    }
-    .cv .circle-white-dashed {
+   
+
+}    .cv .circle-white-dashed {
         position: relative;
-        right: 0
+        top: -214px;
+        right: 10px;
       }
     /**************gallery***************/
     #gallery{
@@ -546,12 +568,26 @@ p {
     }
     .project-details {
         width: 90%;
+        margin: 0 10px;
     }
-    .modale-objectifs {
-        line-height: 0.5em;
+    .modal-objectifs {
+        line-height: 1em;
+        
     }
-    .github-link{
-    margin-top: 5%
+    .github-link {
+        display: none;
+    }
+
+    #github-image {
+        display: flex;
+        justify-content: center;
+        background-color: #A60C0C;
+        padding: 10px; 
+        width: 100px; 
+        height: auto; 
+        border-radius: 25%; 
+        margin-bottom: 5%; 
+        margin-top: 0;
     }
     
     /***********competences***********/
@@ -565,14 +601,13 @@ p {
         display: flex;
         flex-direction: row;
         flex-wrap: wrap;
-        width: 100%;
-        padding: 20px;
-        margin: 0 10px;
         }
     
     .service__description {
         width: 45%;
-        margin: 10px;
+        height: auto;
+        margin: 10px 0;
+        padding: 0;
         }
 
     .service__logo {
@@ -598,6 +633,7 @@ p {
 .curriculum {
     width: 55%;
 }
+
 /**************gallery***************/
 .gallery-item {
     min-width: 90%;
@@ -615,6 +651,7 @@ p {
     display: flex;
     justify-content: center;
     max-width: 90%;
+    min-height: 100%;
 }
 
 #modal-description {
@@ -625,11 +662,6 @@ p {
     color: black;
     text-align: center;
     padding: 14px;
-}
-
-.github-link {
-    padding: 5px;
-    font-size: 20px;
 }
 
 /***********competences***********/

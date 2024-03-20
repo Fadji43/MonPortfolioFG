@@ -9,18 +9,22 @@ body {
 
 h1 {
     font-size: 48px;
+    margin: 0;
   }
   
   h2 {
-    font-size: 32px; 
+    font-size: 32px;
+    margin: 0; 
   }
   
   h3 {
     font-size: 28px; 
+    margin: 0;
   }
   
   h4 {
-    font-size: 24px; 
+    font-size: 24px;
+    margin: 0; 
   }
 /*************header**************/
 header {
@@ -59,9 +63,11 @@ header {
   }
 /*************contact**************/
 .contact{
+  display: flex;
     flex: 1.2;
     flex-direction: column; 
-    padding: 20px;
+    justify-content: center;
+    padding: 30px;
     background-color: #f8f5e0;
     border-radius: 20px;
 }
@@ -74,9 +80,11 @@ img {
 .contact__title {
   display: flex;
   justify-content: center;
+  padding-bottom: 20px;
 }
+
 .info{
-  margin: 50px 0;
+  margin: 10px;
 }
 
 .info-row {
@@ -86,7 +94,7 @@ img {
 }
 
 .icon-info {
-  padding: 20px;
+  padding: 10px;
 }
 
 .adress {
@@ -101,8 +109,8 @@ img {
 .hobby{
   display: flex; 
   flex-direction: column;
-  align-items: center;
-  justify-content: center;
+
+  text-align: center;
 }
 
 /*************experience**************/
@@ -117,7 +125,7 @@ img {
 }
 
 .post {
-  padding: 20px;
+  padding: 10px;
 }
 /***********bloc2**************/
 #secondblock {
