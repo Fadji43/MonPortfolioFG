@@ -12,18 +12,21 @@ document.addEventListener('DOMContentLoaded', function () {
     modalImage.src = imageSrc;
     modalDescription.innerHTML = description;
 
-    const objectifsSection = document.getElementById('modal-objectifs');
-    if (objectifs && objectifs.length > 0) {
-      const objectifsHTML = objectifs.map(objectif => `<p>${objectif}</p>`).join('');
-      objectifsSection.innerHTML = objectifsHTML;
-    } else {
-      objectifsSection.innerHTML = ''; // Vide la section si pas d'objectifs
-    }
+    const objectifsList = document.getElementById('modal-objectifs');
+    objectifsList.innerHTML = '';
+
+    // Génère les éléments <li> pour chaque objectif
+    objectifs.forEach(objectif => {
+        const listItem = document.createElement('li');
+        listItem.textContent = objectif;
+        objectifsList.appendChild(listItem);
+    });
 
     modalOutils.innerHTML = outils || '';
     modalGithub.href = githubLink;
     console.log("au click !");
-  }
+}
+
 
   let currentProject = null;
   let currentImageIndex = 0;

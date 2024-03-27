@@ -136,6 +136,7 @@ h1 {
     font-size: 18px;
 	width: 100%;
     color: white;
+    text-indent: 20px;
 }
 #about-me p {
 	width: 90%;
@@ -209,7 +210,7 @@ h1 {
     height: 200px;
     object-fit: cover;
     margin : 20px;
-    cursor: url('./rocket.svg') 16 16, auto;
+    cursor: pointer;
     border-radius: 30px; 
 }
 
@@ -230,7 +231,7 @@ h1 {
     left: 0;
     top: 0;
     width: 100%;
-    max-height: 100%;
+    height: 100%;
     overflow: auto;
     background-color: rgb(0, 0, 0);
     background-color: rgba(0, 0, 0, 0.9);
@@ -241,8 +242,7 @@ h1 {
     display: flex;
     justify-content: center;
     align-items: flex-start;
-    margin: 2%;
-    height: 100%;
+    margin: 3% 0;
 }
 
 .modal-content {
@@ -311,6 +311,7 @@ h1 {
 .modal-title{
     display: flex;
     justify-content: center;
+    margin: 0;
 }
 
 .modal-description {
@@ -330,16 +331,18 @@ h1 {
     display: flex;
     flex-direction: column;
     align-items: center;
-    margin: 20px;
+    margin: 10px;
 }
-#modal-objectifs{
+
+.modal-objectifs{
     display: flex; 
     flex-direction: column; 
-    text-align: center;
+    text-align: flex-start;
+    padding: 20px;
 }
+
 #modal-outils {
     text-align: center;
-    padding: 20px;
 }
 
 .github-link {
@@ -399,7 +402,7 @@ h1 {
     justify-content: space-around;
     align-items: center;
     max-width:100%;
-    height: 25px;
+    height:    auto;
     color: white;
     padding: 80px;
     background-color: #f8f5e0;
@@ -409,7 +412,7 @@ h1 {
     width: auto;
     height: 60px;
     padding: 10px;
-    cursor: url('./rocket.svg') 16 16, auto;
+    cursor: pointer;
     transition: all 200ms;
 }
 
@@ -425,9 +428,8 @@ h1 {
 
 .form-container { 
     display: flex; 
-    flex-direction: row;;
-    max-width: 600px;
-    max-height: 400px;
+    flex-direction: row;
+    max-width: 70%;
     margin: 0 auto;
     background-color: #fff;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
@@ -440,7 +442,6 @@ h1 {
     display: flex;
     flex-direction: column;
     flex: 1;
-
     padding-right: 20px;
     box-sizing: border-box;
 }
@@ -482,7 +483,7 @@ button {
     padding: 10px 15px;
     border: none;
     border-radius: 5px;
-    cursor: url('./rocket.svg') 16 16, auto;
+    cursor: pointer;
 }
 
 button:hover { 
@@ -497,6 +498,9 @@ button:hover {
 /*********responsive***********/
 @media all and (max-width: 768px) {
 
+main {
+    min-width: 100%;
+}
 /************nav**************/
 .top-header {
     display: flex;
@@ -504,10 +508,10 @@ button:hover {
 }
 /***********présentation************/
     #about {
-        min-width: 100%;
+        width: 100%;
         display: flex;
         flex-direction: column;
-        padding: 30px;
+        padding: 40px;
         margin: 0;
         border-radius: 0;
     }
@@ -538,7 +542,7 @@ button:hover {
         padding: 50px 0;
     }
     .container {
-        min-width: 100%;
+      
         margin: 20px auto;
     }
     
@@ -614,7 +618,7 @@ button:hover {
         display: flex;
         flex-wrap: wrap;
         justify-content: center;
-        height: 200px;
+        min-height: 300px;
         padding: 0;
 
     }
@@ -670,7 +674,7 @@ button:hover {
     }
 
 .service__logo {
-    height: 300px;
+    min-height: 300px;
     }
 .outil{
     height: 60px;
@@ -678,7 +682,9 @@ button:hover {
 
 /************formulaire***********/
 .form-container { 
-    max-height: 350px;
+    display: flex; 
+    flex-direction: column;
+    
 }   
 
 #rocket {
