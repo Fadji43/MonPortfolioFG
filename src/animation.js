@@ -4,38 +4,13 @@
     const circle = document.querySelector('.cv .circle-white-dashed');
     const cvLink = document.querySelector('.cv a');
   
-    let cvAnimation = null;
-  
-    function startCvAnimation() {
-        cvAnimation = anime.timeline({loop: true})
-            .add({
-                targets: '.cv',
-                opacity: [0, 1],
-                easing: 'easeInOutQuad',
-                duration: 400,
-            })
-            .add({
-                targets: '.cv',
-                opacity: [1, 0],
-                easing: 'easeInOutQuad',
-                duration: 1000,
-                delay: 2000,
-            });
-    }
-  
-    function stopCvAnimation() {
-        if (cvAnimation) {
-            cvAnimation.pause();
-        }
-    }
-  
     let circleAnimation = null;
   
     function startCircleAnimation() {
         circleAnimation = anime({
             targets: circle,
             rotateZ: 360,
-            duration: 10000,
+            duration: 5000,
             easing: "linear",
             loop: true
         });
@@ -47,10 +22,6 @@
         }
     }
   
-    // Démarrer l'animation du CV lorsque la souris entre dans la zone du CV
-    cvLink.addEventListener('mouseenter', startCvAnimation);
-    // Arrêter l'animation du CV lorsque la souris quitte la zone du CV
-    cvLink.addEventListener('mouseleave', stopCvAnimation);
   
     // Démarrer l'animation du cercle lorsque la souris entre dans la zone du cercle
     cvLink.addEventListener('mouseenter', startCircleAnimation);

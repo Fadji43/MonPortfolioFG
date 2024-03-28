@@ -35,7 +35,7 @@ h1 {
     align-items: center;
     padding: 20px;
     background-color: #f8f5e0;
-    font-size: 60px;
+
 }
 
 .nav ul {
@@ -158,16 +158,17 @@ h1 {
   
 .cv .letters {
     font-weight: 800;
-    font-size: 4.5em;
+    font-size: 4em;
     color: #A60C0C;
-    width: 2em;
-    height: 2em;
+    width: 1em;
+    height: 1em;
     display: flex;
     justify-content: center;
     align-items: center;
     background-color: #f8f5e0;
     border-radius: 50%;
     margin-right: 50px;
+    padding: 20px;
   }
 
   .cv .circle-white-dashed {
@@ -178,10 +179,10 @@ h1 {
     border-radius: 50%;
     background-color: transparent;
     border: 2px dashed #f8f5e0;
-    width: 10em;
-    height: 10em;
-    top: 50px;
-    right: 41px;
+    width: 7.5em;
+    height: 7.5em;
+    top: 45px;
+    right: 40px;
   }
 
 /**************gallery***************/
@@ -534,7 +535,7 @@ main {
 
 }    .cv .circle-white-dashed {
         position: relative;
-        top: -214px;
+        top: -166px;
         right: 10px;
       }
     /**************gallery***************/
@@ -596,7 +597,7 @@ main {
     
     /***********competences***********/
     #services {
-        min-width: 100%;
+        width: 100%;
         margin: 0;
         border-radius: 0;
     }
@@ -622,11 +623,20 @@ main {
         padding: 0;
 
     }
+
+    .form-container {
+        max-width: 90%;
+    }
 }
 @media all and (max-width: 375px) {
 /**************nav************/
+.top-header {
+    padding: 20px 0;
+    font-size: 20px;
+}
 .nav ul {
     font-size: 10px;
+    margin: 0;
 }
 
 /***********présentation************/
@@ -669,6 +679,11 @@ main {
 }
 
 /***********competences***********/
+
+.service-container {
+    display: flex;
+    justify-content: center;
+}
 .service__description {
     width: 90%;
     }
