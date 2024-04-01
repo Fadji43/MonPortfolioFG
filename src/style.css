@@ -337,7 +337,6 @@ h1 {
 .modal-objectifs{
     display: flex; 
     flex-direction: column; 
-    text-align: flex-start;
     padding: 20px;
 }
 
