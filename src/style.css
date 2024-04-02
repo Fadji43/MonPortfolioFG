@@ -445,21 +445,21 @@ h1 {
     box-sizing: border-box;
 }
 
-@keyframes appearFromTopLeft {
+@keyframes appearFromLeft {
     0% {
-      transform: translate(-100vw, -100vh);
+      transform: translateX(-300%);
       opacity: 0;
     }
     100% {
-      transform: translate(0, 0);
+      transform: translateX(0);
       opacity: 1;
     }
-  }
+}
 
 #rocket {
     width: 150px;
-    animation: appearFromTopLeft 2s ease-out forwards;
-  }
+}
+
 
 label {
     display: block;

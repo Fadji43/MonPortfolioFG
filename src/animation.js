@@ -32,24 +32,20 @@
   
 /**************fusée***************/
 document.addEventListener('DOMContentLoaded', function() {
-  const observer = new IntersectionObserver((entries) => {
-    for (const entry of entries) {
-      if (entry.isIntersecting) {
-        observer.unobserve(entry.target);
-      }
-    }
-  }, {
-    threshold: 0.5
-  });
-
   const rocketElement = document.getElementById('rocket');
 
-  if (rocketElement) {
-    observer.observe(rocketElement);
-  } else {
-    console.error("L'élément avec l'ID 'rocket' n'a pas été trouvé.");
-  }
-});
+  const observer = new IntersectionObserver((entries) => {
+    entries.forEach(entry => {
+      if (entry.isIntersecting) {
+        rocketElement.style.display = 'block'; // Afficher la fusée lorsque l'élément est dans la vue
+        rocketElement.style.animation = 'appearFromLeft 2s ease-out forwards'; // Déclencher l'animation d'apparition
+      }
+    });
+  }, {
+    threshold: 0.5 // Déclencher lorsque l'élément est légèrement visible dans la fenêtre
+  });
 
+  observer.observe(rocketElement);
+});
 
 

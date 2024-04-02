@@ -153,7 +153,7 @@ img {
 
 #formationToggle, #diplomeToggle, #logicielsToggle {
   font-size: 50px;
-  cursor: url('./rocket.svg') 16 16, auto;
+  cursor: pointer;
   display: flex;
   justify-content: center;
   transition: transform 0.3s; 
